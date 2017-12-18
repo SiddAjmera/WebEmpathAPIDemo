@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="center">
+  <h3>Click on the Record Button to get your Emotion Quotient</h3>
+  <button class="btn record-btn" (click)="startRecognition()">Record</button>
+  <hr>
+  <div *ngIf="emotionData">
+    <h4>Your Emotion Data</h4>
+    <pre>{{ emotionData | json }}</pre>
+  </div>
+</div>

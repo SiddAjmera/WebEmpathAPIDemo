@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+    padding: 5%;
+}
+
+.record-btn {
+    border-radius: 10em!important;
+    background: linear-gradient(50deg,#F855C8,#F8D55B)!important;
+    color: white!important;
+    width: 50%!important;
+    height: 50px!important;
+    font-weight: bolder!important;
+}

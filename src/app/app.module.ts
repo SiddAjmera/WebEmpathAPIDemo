@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { AudioUtilService } from 'app/services/audio-util/audio-util.service';
+import { RecorderService } from 'app/services/recorder/recorder.service';
+import { WebEmpathService } from './services/web-empath/web-empath.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +15,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AudioUtilService, RecorderService, WebEmpathService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

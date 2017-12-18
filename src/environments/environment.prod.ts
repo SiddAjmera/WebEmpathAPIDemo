@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  apiKeys: {
+    'webEmpath': 'your-api-key-here'
+  }
 };
