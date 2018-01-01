@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
     this.recognition.onresult = event => {
       this.recorder.stop();
       this.recorder.exportWAV((blob) => {
-        console.log('Got blob as : ', blob);
         let formData: FormData = new FormData();
         formData.append('apikey', environment.apiKeys.webEmpath);
         formData.append('wav', blob);
